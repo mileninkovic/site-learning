@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Document</title>
+  <meta name="description" content="Learning site focused around technical subjects, primarily JavaScript.">
+  <meta name="author" content="Made by Mile Ninkovic.">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="../scripts/main.js" defer></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/logo.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <img id="logo" class="u-pull-left" src="../images/logo.png" style="cursor: pointer;">
+      <button class="button u-pull-right" id="about" style="margin-top: 5%; margin-left: 1%;">about me</button>
+      <button class="button u-pull-right" id="index" style="margin-top: 5%; margin-left: 1%;">overview</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Variables</h1>
+        <p>In JavaScript there are three different keywords that declare variables. These are <code>var</code>, <code>let</code> and <code>const</code>. These keywords are followed by a variable name, an equal sign and lastly a value. Below is an example of different variables.</p>
+        <pre>
+            <code>var example1 = 0;<br>let example1 = 0;<br>const example1 = 0;</code>
+        </pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <h4>var</h4>
+        <p><code>var</code> has global scope when outside of a function block. If <code>var</code> is inside a function block it has local scope. We can also redeclare a <code>var</code> as long as it is in the same scope.</p>
+      </div>
+      <div class="four columns">
+        <h4>let</h4>
+        <p><code>let</code> is the preferred keyword to use when declaring variables. <code>let</code> is block scoped, when declared it can only be used in the block it is declared in. <code>let</code> can be updated but not re-declared.</p>
+      </div>
+      <div class="four columns">
+        <h4>const</h4>
+        <p><code>const</code> is used for declaring constant values or values that don't change. <code>const</code> values are block scoped just like <code>let</code>. It is not possible to update or re-declare <code>const</code> values.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
