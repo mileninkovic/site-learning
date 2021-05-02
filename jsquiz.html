@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Document</title>
+  <meta name="description" content="Learning site focused around technical subjects, primarily JavaScript.">
+  <meta name="author" content="Made by Mile Ninkovic.">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/scoring.js" defer></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <img id="logo" class="u-pull-left" src="images/logo.png" style="cursor: pointer;">
+      <button class="button u-pull-right" id="about" style="margin-top: 5%; margin-left: 1%;">about me</button>
+      <button class="button u-pull-right" id="index" style="margin-top: 5%; margin-left: 1%;">overview</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Variables</h1>
+        <p>In JavaScript there are three different keywords that declare variables. These are <code>var</code>, <code>let</code> and <code>const</code>. These keywords are followed by a variable name, an equal sign and lastly a value. Below is an example of different variables.</p>
+        <pre>
+            <code>var example1 = 0;<br>let example1 = 0;<br>const example1 = 0;</code>
+        </pre>
+        <div id="quiz" class="twelve columns">
+          <form id="spm1">
+            <h3>Question 1</h3>
+            Svar 1<input type="radio" name="spm1" value="1"> <br>
+            Svar 2<input type="radio" name="spm1" value="2"> <br>
+            Svar 3<input type="radio" name="spm1" value="3"> <br>
+            <label class="button" onclick="btnNext(this)">Next</label>
+          </form>
+        
+          <form id="spm2" class="hidden">
+            <h3>Question 2</h3>
+            Svar 1<input type="radio" name="spm2" value="1"> <br>
+            Svar 2<input type="radio" name="spm2" value="2"> <br>
+            Svar 3<input type="radio" name="spm2" value="3"> <br>
+            <label class="button" onclick="btnNext(this)">Next</label>
+          </form>
+        
+          <form id="spm3" class="hidden">
+            <h3>Question 3</h3>
+            Svar 1<input type="radio" name="spm3" value="1"> <br>
+            Svar 2<input type="radio" name="spm3" value="2"> <br>
+            Svar 3<input type="radio" name="spm3" value="3"> <br>
+            <label class="button" onclick="btnNext(this)">Next</label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
